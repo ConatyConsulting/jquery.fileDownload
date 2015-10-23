@@ -14,7 +14,7 @@
 * !!!!NOTE!!!!
 */
 
-(function($, window){
+(function($){
 	// i'll just put them here to get evaluated on script load
 	var htmlSpecialCharsRegEx = /[<>&\r\n"']/gm;
 	var htmlSpecialCharsPlaceHolders = {
@@ -26,6 +26,7 @@
 				'"': 'quot;',
 				"'": '#39;' /*single quotes just to be safe, IE8 doesn't support &apos;, so use &#39; instead */
 	};
+  var window = $(window)[0];
 
 $.extend({
     //
@@ -470,4 +471,4 @@ $.extend({
     }
 });
 
-})(jQuery, this);
+})(jQuery);
