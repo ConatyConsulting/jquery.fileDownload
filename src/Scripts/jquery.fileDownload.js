@@ -26,7 +26,6 @@
 				'"': 'quot;',
 				"'": '#39;' /*single quotes just to be safe, IE8 doesn't support &apos;, so use &#39; instead */
 	};
-  var window = $(window)[0];
 
 $.extend({
     //
